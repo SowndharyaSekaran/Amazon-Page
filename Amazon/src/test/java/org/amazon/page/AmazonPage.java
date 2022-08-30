@@ -39,7 +39,7 @@ public class AmazonPage {
 		driver.findElement(By.id("ap_phone_number")).sendKeys("9876543210");
 		driver.findElement(By.id("ap_email")).sendKeys("sow@gmail.com");
 		driver.findElement(By.id("ap_password")).sendKeys("sow@123");
-
+		driver.quit();
 		
 	}		
 }

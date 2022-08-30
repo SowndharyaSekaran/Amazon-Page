@@ -27,14 +27,11 @@ public class AmazonPage {
 		s.selectByVisibleText("2");
 		driver.findElement(By.xpath("//*[@id=\"add-to-cart-button\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"sw-gtc\"]/span/a")).click();
-		Thread.sleep(5000);
 		driver.findElement(By.className("a-color-link")).click();
 		driver.get("https://www.amazon.in/gp/product/B08QJJCY2Q/ref=ox_sc_act_title_delete_1?smid=A14CZOWI0VEHLG&psc=1");
 		driver.findElement(By.xpath("//*[@id=\"add-to-cart-button\"]")).click();
 		driver.findElement(By.name("proceedToRetailCheckout")).click();
-		Thread.sleep(9000);
 		driver.findElement(By.id("createAccountSubmit")).click();
-		Thread.sleep(9000);
 		driver.findElement(By.id("ap_customer_name")).sendKeys("Sowndharya");
 		driver.findElement(By.id("ap_phone_number")).sendKeys("9876543210");
 		driver.findElement(By.id("ap_email")).sendKeys("sow@gmail.com");

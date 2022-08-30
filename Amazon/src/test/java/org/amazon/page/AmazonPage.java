@@ -35,7 +35,10 @@ public class AmazonPage {
 		Thread.sleep(9000);
 		driver.findElement(By.id("createAccountSubmit")).click();
 		Thread.sleep(9000);
-
+		driver.findElement(By.id("ap_customer_name")).sendKeys("Sowndharya");
+		driver.findElement(By.id("ap_phone_number")).sendKeys("9876543210");
+		driver.findElement(By.id("ap_email")).sendKeys("sow@gmail.com");
+		driver.findElement(By.id("ap_password")).sendKeys("sow@123");
 
 		
 	}		

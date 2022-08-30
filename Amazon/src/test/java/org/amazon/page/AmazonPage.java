@@ -32,6 +32,9 @@ public class AmazonPage {
 		driver.get("https://www.amazon.in/gp/product/B08QJJCY2Q/ref=ox_sc_act_title_delete_1?smid=A14CZOWI0VEHLG&psc=1");
 		driver.findElement(By.xpath("//*[@id=\"add-to-cart-button\"]")).click();
 		driver.findElement(By.name("proceedToRetailCheckout")).click();
+		Thread.sleep(9000);
+		driver.findElement(By.id("createAccountSubmit")).click();
+
 
 		
 	}		

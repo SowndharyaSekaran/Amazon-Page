@@ -21,6 +21,7 @@ public class AmazonPage {
 		driver.get("https://www.amazon.in/Notebook-MacBook-Computer-Anti-Skid-Mousepad/dp/B08QJJCY2Q/ref=sr_1_3?keywords=mouse+pad&qid=1661794607&sr=8-3");
 		String mainwindow = driver.getWindowHandle();		
 		driver.switchTo().window(mainwindow);
+		WebElement we=driver.findElement(By.name("quantity"));
 
 		
 	}		

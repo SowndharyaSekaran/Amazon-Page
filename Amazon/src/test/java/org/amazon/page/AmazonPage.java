@@ -25,6 +25,7 @@ public class AmazonPage {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		Select s=new Select(we);
 		s.selectByVisibleText("2");
+		driver.findElement(By.xpath("//*[@id=\"add-to-cart-button\"]")).click();
 
 		
 	}		

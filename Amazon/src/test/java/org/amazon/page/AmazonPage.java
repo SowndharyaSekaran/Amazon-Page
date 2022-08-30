@@ -27,6 +27,7 @@ public class AmazonPage {
 		s.selectByVisibleText("2");
 		driver.findElement(By.xpath("//*[@id=\"add-to-cart-button\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"sw-gtc\"]/span/a")).click();
+		Thread.sleep(5000);
 
 		
 	}		

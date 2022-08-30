@@ -23,6 +23,8 @@ public class AmazonPage {
 		driver.switchTo().window(mainwindow);
 		WebElement we=driver.findElement(By.name("quantity"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		Select s=new Select(we);
+		s.selectByVisibleText("2");
 
 		
 	}		

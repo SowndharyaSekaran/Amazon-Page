@@ -15,6 +15,9 @@ public class AmazonPage {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("mouse pad");
+		driver.findElement(By.id("nav-search-submit-button")).click();
+
 		
 	}		
 }

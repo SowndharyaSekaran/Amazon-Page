@@ -34,6 +34,7 @@ public class AmazonPage {
 		driver.findElement(By.name("proceedToRetailCheckout")).click();
 		Thread.sleep(9000);
 		driver.findElement(By.id("createAccountSubmit")).click();
+		Thread.sleep(9000);
 
 
 		

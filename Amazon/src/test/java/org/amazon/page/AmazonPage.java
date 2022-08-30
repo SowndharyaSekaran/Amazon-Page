@@ -22,6 +22,7 @@ public class AmazonPage {
 		String mainwindow = driver.getWindowHandle();		
 		driver.switchTo().window(mainwindow);
 		WebElement we=driver.findElement(By.name("quantity"));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 		
 	}		
